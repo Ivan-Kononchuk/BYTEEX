@@ -22,10 +22,16 @@ body, html{
 	src: url(../fonts/fonnts.com-Suisse_Intl_Regular.ttf);
 }
 
+@font-face{
+	font-family: "Sofia Pro";
+	src: url("../fonts/Sofia Pro Regular Az.woff");
+}
+
 /* FONTS */
 
 
 /* HEADER TOP TEXT START*/
+
 .header_top_text{
 	background: #F9F0E5;
 	text-align: center;
@@ -51,9 +57,191 @@ body, html{
 /* HEADER TOP TEXT END*/
 
 
-.logo{
+
+/* HEADER STYLES STARTS*/
+
+.header{
+	width: 100%;
+}
+
+.header__width{
 	max-width: 1265px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
+
+.logo{
+	margin-bottom: 61px;
+}
+
+.header__content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: start;
+	align-items: start;
+	margin-left: 6px;
+}
+
+.header_content_title{
+	font-family: "Sofia Pro";
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 45px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #01005B;
+	width: 592px;
+	
+	margin: 0 0 25px 0;
+}
+
+.header_content_paragraph{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	max-width: 440px;
+	-ms-align-items: center;
+	align-items: center;
+
+	margin-bottom: 17px;
+}
+
+.header_content_paragraph:last-of-type{
+	margin-bottom: 31px;
+	-ms-align-items: start;
+	align-items: start;
+}
+
+.header_content_paragraph img{
+	margin-right: 10px;
+	height: 31px;
+	width: 31px;
+}
+
+.header_content_paragraph p{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: #676869;
+	margin: 0;
+}
+
+.header_content_button{
+	font-family: "Suisse Int'l";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.35px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color:white;
+
+	background: #01005B;
+	border-radius: 5px;
+	border-style: none;
+
+	padding: 19px ;
+	width: 356px;
+
+	cursor: pointer;
+
+	margin-bottom: 46px;
+}
+
+.header_content_button::after{
+	position: relative;
+	content: url(../imgs/header_content_button_arrow.png);
+	margin-left: 33px;
+	top: 18px;
+}
+
+.header_content_comment{
+	width: 416px;
+	border-radius: 8px;
+	border: 1px solid #EDEDED;
+	box-shadow: 0px 3px 10px 0px #00000014;
+	padding: 9px 20px;
+}
+
+.header_content_comment img:first-of-type{
+	width: 39px;
+	height: 39px;
+	margin-right: 14px;
+}
+
+.header_content_author{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header_content_comment_name{
+	font-family: 'Sofia Pro';
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: #676869;
+	margin-right: 23px;
+}
+
+.header_content_comment_review_text{
+	font-family: "Suisse Int'l";
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #828282;
+
+	margin-left: 7px;
+}
+
+.header_content_comment_text{
+	font-family: "Suisse Int'l";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #676869;
+
+	margin: 0;
+}
+
+.header__pics{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+/*HEADER PICS*/
+.header_pic_one{
+	width: 231px;
+	height: 325px;
+	margin-right: 2.5px;
+}.header_pic_second{
+	width: 271px;
+	height: 429px;
+	margin-right: 2.5px;
+}.header_pic_third{
+	width: 231px;
+	height: 339px;
+}/*HEADER PICS*/
