@@ -160,6 +160,10 @@ body, html{
 	top: 18px;
 }
 
+.header_content_desc{
+	z-index: 2;
+}
+
 .header_content_comment{
 	width: 416px;
 	border-radius: 8px;
@@ -167,6 +171,7 @@ body, html{
 	box-shadow: 0px 3px 10px 0px #00000014;
 	padding: 9px 20px;
 	background-color: white;
+	z-index: 5;
 }
 
 .header_content_comment img:first-of-type{
@@ -262,10 +267,8 @@ body, html{
 .loungewear_section{
 	background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
 	width: 100%;
-	height: 530px;
 	position: relative;
 	top: -76px;
-	z-index: -1;
 
 	margin-bottom: 90px;
 }
@@ -419,15 +422,16 @@ body, html{
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  padding: 10px;
 }
 
 .prev-btn {
-  left: -45px;
+  left: -55px;
   content: url(../imgs/slider/arrow_left.png);
 }
 
 .next-btn {
-  right: -45px;
+  right: -55px;
   content: url(../imgs/slider/arrow_right.png);
 }
 
@@ -467,3 +471,95 @@ body, html{
 
 							/* LOUNGOWEAR SECTION STYLES END*/
 
+							/* STORY SECTION START*/
+.story_section{
+	background: #F0EEEF;
+	padding-top: 83px;
+	padding-bottom: 56px;
+}
+
+.story_width{
+	max-width: 1243px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.story_pics{
+	width: 524px;
+	height: 664px;
+	position: relative;
+}
+
+.story_first_pic{
+	width: 165px;
+	height: 175px;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}.story_first_second{
+	width: 381.64px;
+	height: 570px;
+	position: absolute;
+	top: 47px;
+	left: 50px;
+}.story_first_third{
+	width: 129px;
+	height: 175px;
+	border-left: 4px solid #F0EEEF;
+	position: absolute;
+	object-fit: cover;
+	bottom: 0;
+	right: 0;
+
+	box-shadow: 0px 3px 10px 1px #00000014;
+}
+
+.story_title{
+	font-family: Sofia Pro;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #2A2996;
+
+	margin: 26px 0 39px 0;
+}
+
+.story_text{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: #6C6C6C;
+}
+
+.story_text:not(last-of-type){
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.story_button{
+	width: 356px;
+	height: 56px;
+	border-radius: 5px;
+	font-family: "Suisse Int'l";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.35px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: white;
+	background: #01005B;
+	border-style: none;
+}
+
+.story_content{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 97px;
+}
