@@ -58,11 +58,7 @@ body, html{
 
 
 
-/* HEADER STYLES STARTS*/
-
-.header{
-	width: 100%;
-}
+								/* HEADER STYLES STARTS*/
 
 .header__width{
 	max-width: 1265px;
@@ -83,6 +79,8 @@ body, html{
 	-ms-align-items: start;
 	align-items: start;
 	margin-left: 6px;
+	margin: 0;
+	padding: 0;
 }
 
 .header_content_title{
@@ -168,6 +166,7 @@ body, html{
 	border: 1px solid #EDEDED;
 	box-shadow: 0px 3px 10px 0px #00000014;
 	padding: 9px 20px;
+	background-color: white;
 }
 
 .header_content_comment img:first-of-type{
@@ -230,6 +229,7 @@ body, html{
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
+	width: 725px;
 }
 
 /*HEADER PICS*/
@@ -241,7 +241,229 @@ body, html{
 	width: 271px;
 	height: 429px;
 	margin-right: 2.5px;
+	margin: 0 -40px 0 -60px;
+	z-index: 3;
+	box-shadow: 0px 3px 10px 1px #00000014;
+	border: 2.5px solid #FFFFFF
 }.header_pic_third{
 	width: 231px;
 	height: 339px;
-}/*HEADER PICS*/
+}.header_content_side_img{
+	width: 67px;
+	background-color: black;
+}
+/*HEADER PICS*/
+
+						/*HEADER STYLES END*/
+
+
+
+						/* LOUNGOWEAR SECTION STYLES START*/
+.loungewear_section{
+	background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+	width: 100%;
+	height: 530px;
+	position: relative;
+	top: -76px;
+	z-index: -1;
+
+	margin-bottom: 90px;
+}
+
+.loungewear_width{
+	position: relative;
+	max-width: 1265px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	top: 76px;
+}
+
+/* ART BOARD STYLES START */
+.art_board_title{
+	font-family: Sofia Pro;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #868787;
+
+	margin-top: 0;
+}
+
+.art_board_pics_container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	width: 1265px;
+}
+
+.art_board_pics_container img:nth-child(n+1){
+	width: 172px;
+	height: 22px;
+}.art_board_pics_container img:nth-child(n+2){
+	width: 111px;
+	height: 52px;
+}.art_board_pics_container img:nth-child(n+3){
+	width: 271px;
+	height: 53px;
+}.art_board_pics_container img:nth-child(n+4){
+	width: 194px;
+	height: 37px;
+}.art_board_pics_container img:nth-child(n+5){
+	width: 192px;
+	height: 58px;
+}
+
+.art_board{
+	margin-bottom: 110px;
+}
+/* ART BOARD STYLES END */
+
+.loungewear_content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;;
+}
+
+.loungewear_content_title{
+	font-family: Sofia Pro;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #01005B;
+
+	margin-bottom: 74px;
+	margin-top: 0;
+}
+
+.loungewear_content_info_card_title{
+	font-family: Sofia Pro;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #01005B;
+
+	margin-top: 11px;
+	margin-bottom: 14px;
+}
+
+.loungewear_content_info_card_text{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: #6C6C6C;
+
+	width: 497px;
+}
+
+.loungewear_content_info_card{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.loungewear_content_info_card img{
+	background-color: #F9F0E5;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+
+	margin-right: 32px;
+}
+
+
+/* SLIDER START */
+.slider {
+  position: relative;
+  width: 433px;
+  height: 648px;
+}
+
+#main-image{
+	width: 100%;
+	height: 100%;
+}
+
+.slider-main {
+  /*position: relative;*/
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: -45px;
+  content: url(../imgs/slider/arrow_left.png);
+}
+
+.next-btn {
+  right: -45px;
+  content: url(../imgs/slider/arrow_right.png);
+}
+
+.slider-thumbnails {
+	position: absolute;
+	left: 73px;
+	bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-thumbnails img {
+  width: 31px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 7px;
+  cursor: pointer;
+  filter: brightness(135%);
+}
+
+.slider-thumbnails .active {
+  border: 2px solid #FFFFFF;
+  filter: brightness(100%);
+}
+
+#image-caption {
+  font-family: "Suisse Int'l";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #676869;
+
+}
+/* SLIDER END */
+
+							/* LOUNGOWEAR SECTION STYLES END*/
+
