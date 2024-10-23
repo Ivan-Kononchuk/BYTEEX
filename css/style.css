@@ -1,1 +1,59 @@
-style.css
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html{
+	padding: 0;
+	margin: 0;
+}
+
+*, *::before, *::after{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* FONTS */
+
+@font-face{
+	font-family: "Suisse Int'l";
+	src: url(../fonts/fonnts.com-Suisse_Intl_Regular.ttf);
+}
+
+/* FONTS */
+
+
+/* HEADER TOP TEXT START*/
+.header_top_text{
+	background: #F9F0E5;
+	text-align: center;
+	margin-bottom: 33px;
+}
+
+.header_top_text p{
+	margin: 0;
+	font-family: "Suisse Int'l";
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0.08em;
+	text-align: center;
+	color: #494949FF
+}
+
+.header_top_text p span{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+/* HEADER TOP TEXT END*/
+
+
+.logo{
+	max-width: 1265px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
