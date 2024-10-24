@@ -882,6 +882,7 @@ body, html{
 
 .faq_section{
 	text-align: center;
+	margin-bottom: 88px;
 }
 
 .faq_width{
@@ -893,3 +894,221 @@ body, html{
 .faq_width .reviews_container{
 	margin-bottom: 109px;
 }
+
+.faq_content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* FAQ QUESTIONS START*/
+.faq_info{}
+
+.faq_title{
+	font-family: Sofia Pro;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #01005B;
+
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.faq_info{
+	text-align: left;
+}
+
+.faq_question{
+	font-family: Sofia Pro;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #01005B;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0;
+	cursor: pointer;
+}
+
+.faq_answer{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: #676869;
+
+	max-width: 567px;
+	transition: all .4s;
+	top: -20px;
+	position: relative;
+	opacity: 0;
+	margin-top: 10px;
+}
+
+.faq_question_container{
+	border-top: 1px solid #EAEAEA;
+	padding-top: 23px;
+	margin-bottom: 35px;
+	max-width: 630px;
+	transition: all .4s;
+	height: 42px;
+}
+
+.faq_question_container:last-of-type{
+	padding-bottom: 47px;
+	border-bottom: 1px solid #EAEAEA;
+	margin-bottom: 0px;
+}
+
+.faq_answer.open{
+  cursor: auto;
+  top: 0;
+  opacity: 1;
+}
+.faq_question_container_open{
+  position: relative;
+  height: auto;
+  margin-bottom: 24px;
+}
+.faq_question_container_open:last-of-type{
+	margin-bottom: 0;
+	padding-bottom: 23px;
+}
+/* FAQ QUESTIONS END*/
+
+
+/* FAQ IMGS START*/
+.faq_pics{
+	width: 430px;
+	height: 645px;
+	position: relative;
+}
+
+.faq_first_girl{
+	bottom: 46px;
+	left: 0;
+	width: 216px;
+	height: 159px;
+	position: absolute;
+}
+.faq_second_girl{
+	top: 129px;
+	left: 80px;
+	width: 235px;
+	height: 355px;
+	position: absolute;
+	z-index: 2;
+}
+.faq_third_girl{
+	top: 1px;
+	right: 42px;
+	width: 167px;
+	height: 253px;
+	position: absolute;
+}
+.faq_rectangle_up{
+	top: 67px;
+	left: 30px;
+	width: 149px;
+	height: 187px;
+	position: absolute;
+}
+.faq_rectangle_down{
+	bottom: 126px;
+	right: 58px;
+	width: 134px;
+	height: 189px;
+	position: absolute;
+}
+/* FAQ IMGS END*/
+					/* FAQ SECTION END */
+
+
+					/* IMPACT SECTION START */
+.section_impact{
+	background: #F0EEEF;
+	height: 246px;
+	text-align: center;
+
+	margin-bottom: 84px;
+}
+
+.impact_title{
+	font-family: Sofia Pro;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #15005B;
+
+	padding-top: 39px;
+	margin-bottom: 18px;
+}
+
+.impact_content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.impact_titles{
+	font-family: Sofia Pro;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #15005B;
+
+	margin: 0;
+}
+
+.impact_info_container:not(:last-of-type){
+	margin-right: 51px;
+}
+
+.impact_info_container:not(:first-of-type){
+	border-left: 1px solid #C4C4C480;
+	padding-left: 51px;
+}
+
+.impact_info_container p{
+	font-family: Sofia Pro;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #15005B;
+
+	margin: 0;
+	margin-top: 4px;
+}
+
+.impact_content img{
+	margin-bottom: 13px;
+}
+				/* IMPACT SECTION END */

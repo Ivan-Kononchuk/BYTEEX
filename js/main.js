@@ -103,3 +103,21 @@ prevComment.addEventListener('click', () => {
 // INITIAL STATE
 updateTestimonials();
               // COMMENTS SLIDER END
+
+
+
+              // FAQ SECTION START
+// FAQ animations
+const faqItems = document.querySelectorAll('.faq_question_container');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq_question');
+  const answer = item.querySelector('.faq_answer');
+  const faq_icon = item.querySelector('.faq_icon');
+
+  question.addEventListener('click', () => {
+    answer.classList.toggle('open');
+    item.classList.toggle('faq_question_container_open');
+    faq_icon.src = faq_icon.src.includes('close.png') ? 'imgs/faq/open.png' : 'imgs/faq/close.png';
+  });
+});
