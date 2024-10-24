@@ -1,3 +1,4 @@
+        // Loungewear PICS SLIDER START
 const images = [
   {
     src: "imgs/slider/1.jpg",
@@ -32,7 +33,7 @@ const images = [
     caption: "8 Robe"
   }
 
-  // Додай більше зображень
+  // add more pics
 ];
 
 let currentIndex = 0;
@@ -46,7 +47,7 @@ function updateSlider(index) {
   mainImage.src = images[index].src;
   caption.textContent = images[index].caption;
   
-  // Оновлюємо клас активності для мініатюр
+  // update class activity for pics
   thumbnails.forEach((thumb, i) => {
     thumb.classList.toggle('active', i === index);
   });
@@ -65,3 +66,40 @@ document.querySelector('.next-btn').addEventListener('click', () => {
 function changeImage(index) {
   updateSlider(index);
 }
+          // Loungewear PICS SLIDER END
+
+
+          // COMMENTS SLIDER START
+const prevComment = document.querySelector('.prev_comment');
+const nextComment = document.querySelector('.next_comment');
+const testimonials = document.querySelectorAll('.slider_card');
+let commentIndex = 1;
+
+function updateTestimonials() {
+  testimonials.forEach((slider_card, index) => {
+    slider_card.classList.remove('active');
+
+    // adjucement element
+    if (index === commentIndex) {
+      slider_card.classList.add('active'); // middle comment
+    }
+  });
+
+  // Moving slides for right view
+  const offset = (commentIndex - 1) * -33.33;
+  document.querySelector('.slider_container').style.transform = `translateX(${offset}%)`;
+}
+
+nextComment.addEventListener('click', () => {
+  commentIndex = (commentIndex + 1) % testimonials.length;
+  updateTestimonials();
+});
+
+prevComment.addEventListener('click', () => {
+  commentIndex = (commentIndex - 1 + testimonials.length) % testimonials.length;
+  updateTestimonials();
+});
+
+// INITIAL STATE
+updateTestimonials();
+              // COMMENTS SLIDER END

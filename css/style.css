@@ -413,10 +413,6 @@ body, html{
 	height: 100%;
 }
 
-.slider-main {
-  /*position: relative;*/
-}
-
 .prev-btn, .next-btn {
   position: absolute;
   top: 50%;
@@ -699,3 +695,201 @@ body, html{
 }
 
 					/* COMFORT SECTION END*/
+					/* FANS SECTION START*/
+
+.fans_section{
+}
+
+.fans_title{
+	font-family: Sofia Pro;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #01005B;
+
+	margin-bottom: 25px;
+}
+
+.fans_text{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #676869;
+
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 612px;
+
+	margin-top: 0;
+	margin-bottom: 55px;
+}
+
+.fans_pics{
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	gap: 5px;
+
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+
+	margin-bottom: 76px;
+}
+
+.fans_pics img{
+	width: 128px;
+	height: 128px;
+}
+
+/*@media (max-width: 1500px) {
+  .fans_pics img:nth-child(n+21) {
+    display: none;
+  }
+
+  .fans_pics{
+  	grid-template-columns: repeat(10, 1fr);
+  }
+}*/
+
+
+/* COMMENTS SLIDER START */
+.comment_slider {
+	margin-left: auto;
+	margin-right: auto;
+  position: relative;
+  max-width: 1258px;
+
+  margin-bottom: 63px;
+}
+
+.slider_wrapper {
+  overflow: hidden; /* Приховує інші елементи, які виходять за межі */
+}
+
+.slider_container {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 45px;
+  justify-content: center;
+}
+
+.slider_card {
+  width: 338px;
+  height: 194px;
+  margin-bottom: 58px;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 3px 10px 1px #00000014;
+
+  padding: 29px 39px;
+  transition: height 0.5s ease, margin .5s ease; /* Плавний ефект масштабування */
+
+  overflow: hidden;
+}
+
+.slider_author_pic{
+	width: 39px;
+	height: 39px;
+	margin-right: 14px;
+}
+
+.slider_authro_name{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	margin: 0;
+	color: #676869;
+}
+
+.slider_author_info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.slider_card.active {
+	height: 247px;
+	margin-bottom: 0;
+}
+
+.slider_card.active .comment_text{
+	-webkit-line-clamp: 6;
+	word-break: break-word;
+}
+
+.comment_text{
+	font-family: "Suisse Int'l";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	color: #676869;
+	margin: 12px 0 0 0;
+	overflow: hidden;
+
+	display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.next_comment, .prev_comment {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev_comment {
+  left: -55px;
+  top: 97.5px;
+  content: url(../imgs/slider/arrow_left.png);
+}
+
+.next_comment {
+  right: -55px;
+  top: 97.5px;
+  content: url(../imgs/slider/arrow_right.png);
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev_comment:hover, .next_comment:hover {
+  /*background-color: #ddd;*/
+}
+
+/* COMMENTS SLIDER END */
+
+/* FAQ SECTION START */
+
+.faq_section{
+	text-align: center;
+}
+
+.faq_width{
+	max-width: 1107px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.faq_width .reviews_container{
+	margin-bottom: 109px;
+}
