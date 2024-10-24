@@ -1112,3 +1112,138 @@ body, html{
 	margin-bottom: 13px;
 }
 				/* IMPACT SECTION END */
+
+				/* LOVE SECTION */
+.love_section{
+	text-align: center;
+
+	background: linear-gradient(0deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+}
+
+.love_title{
+	font-family: Sofia Pro;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #01005B;
+}
+
+.love_title_desc{
+	font-family: Sofia Pro;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #676869;
+
+	width: 587px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-bottom: 47px;
+}
+
+.love_pics_container{
+	width: 815px;
+	height: 373px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 58px;
+}
+
+
+.love_rectangle{
+	width: 139px;
+	height: 196px;
+}
+
+.love_first_girl{
+	width: 209px;
+	height: 317px;
+}
+
+.love_second_girl{
+	margin-left: 6px;
+	margin-right: 6px;
+	width: 246px;
+	height: 373px;
+}
+
+.love_third_girl{
+	width: 209px;
+	height: 317px;
+}
+
+.love_section button{
+	margin-bottom: 6px;
+}
+
+.love_adv_icons img{
+	height: 22px;
+	width: 364px;
+	margin-bottom: 18px;
+}
+
+.love_shares{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.love_shipping_container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.love_shipping_container{
+	border-right: 1px solid #C4C4C466;
+	padding-right: 23px;
+	margin-left: 23px;
+
+	margin-bottom: 83px;
+}
+
+.love_shipping_container:last-of-type{
+	border-right: 0;
+}
+
+.love_shipping_container img{
+	height: 33px;
+	width: 33px;
+	margin-right: 12px;
+}
+
+.love_shipping_container p{
+	font-family: Sofia Pro;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	color: #676869;
+
+	width: 119px;
+}
