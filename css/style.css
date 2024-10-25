@@ -1940,7 +1940,7 @@ body, html{
 		margin-left: auto;
 		margin-right: auto;
 
-		margin-bottom: 8px;
+		margin-bottom: 40px;
 	}
 	
 	.faq_questions{
@@ -2021,6 +2021,91 @@ body, html{
   	margin-bottom: 52px;
   }
 
+  /* IMPACT SECTION END*/
+  .love_title_desc{
+  	max-width: 318px;
+    visibility: hidden;
+    position: relative;
+
+    margin-bottom: 53px;
+    height: 22px;
+  }
+
+  .love_title_desc:after{
+  	visibility: visible;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	content: "Click below to browse our collection!";
+
+  	font-family: Sofia Pro;
+  	font-size: 15px;
+  	font-weight: 400;
+  	line-height: 22px;
+  	letter-spacing: 0.03em;
+  	text-align: center;
+  	color: #676869;
+  }
+
+  .love_title{
+  	font-size: 32px;
+  	margin-bottom: 9px;
+  }
+
+  .love_rectangle{
+  	position: absolute;
+  	left: 0;
+  	width: 67px;
+  	height: 95px;
+  }
+
+  .love_first_girl{
+  	position: absolute;
+  	left: 28px;
+  	top: 32px;
+  	width: 97px;
+  	height: 147.5px;
+  	z-index: 2;
+  }
+
+  .love_second_girl{
+  	position: absolute;
+  	left: 106.6px;
+  	z-index: 3;
+  	width: 139px;
+  	height: 211px;
+  }
+
+  .love_third_girl{
+  	position: absolute;
+  	left: 236px;
+  	width: 97.3px;
+  	height: 147.5px;
+  	z-index: 2;
+  }
+
+  .love_pics_container img:last-child{
+  	position: absolute;
+  	left: 305px;
+  	width: 67px;
+  	height: 95px;
+  }
+
+
+  .love_pics_container{
+  	position: relative;
+  	width: 368px;
+  	height: 211px;
+  }
+
+  .love_pics_container{
+  	margin-bottom: 52px;
+  }
+
+  .love_section{
+  	padding-bottom: 40px;
+  }
+
 }
 
 
@@ -2096,8 +2181,26 @@ body, html{
   }
 }
 
+@media screen and (max-width: 503px) {
+  .header_content_title{
+  	font-size: 30px;
+  	line-height: 40px;
+  	width: 370px;
+  }
+}
+
 @media screen and (max-width: 449px) {
   .fans_pics{
   	grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .prev_comment{
+  	left: -5px;
+  }
+
+  .next_comment{
+  	right: 0px;
   }
 }
