@@ -989,6 +989,7 @@ body, html{
 	position: relative;
 	opacity: 0;
 	margin-top: 10px;
+	pointer-events: none;
 }
 
 .faq_question_container{
