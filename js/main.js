@@ -73,7 +73,7 @@ function changeImage(index) {
 const prevComment = document.querySelector('.prev_comment');
 const nextComment = document.querySelector('.next_comment');
 const testimonials = document.querySelectorAll('.slider_card');
-let commentIndex = 0;
+let commentIndex = 1;
 
 function updateTestimonials() {
   testimonials.forEach((slider_card, index) => {
