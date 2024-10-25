@@ -86,7 +86,7 @@ function updateTestimonials() {
   });
 
   // Moving slides for right view
-  const offset = (commentIndex - 1) * -33.33;
+  const offset = (commentIndex - 1) * -30.2;
   document.querySelector('.slider_container').style.transform = `translateX(${offset}%)`;
 }
 
@@ -155,3 +155,36 @@ function showSlides(slideIndex) {
 // Initial load
 showSlides(1);
               // ART BOARD SLIDER END MOBILE
+
+              //  COMFORT SLIDER MOBILE
+
+document.addEventListener('DOMContentLoaded', function () {
+ const slider = document.querySelector('.comfort_cards_container');
+ const leftArrow = document.querySelector('.prev_btn');
+ const rightArrow = document.querySelector('.next_btn');
+ let currentIndex = 0;
+ const totalSlides = document.querySelectorAll('.comfort_cards_container > div').length;
+
+ function moveSlider(index) {
+     const slideWidth = document.querySelector('.comfort_cards_container > div').clientWidth; // Ширина одного слайда
+     slider.style.transform = `translateX(${-index * 322.5}px)`;
+ }
+
+ rightArrow.addEventListener('click', function () {
+     if (currentIndex < totalSlides - 1) { // Перевірка кількості слайдів
+         currentIndex++;
+         moveSlider(currentIndex);
+     }
+ });
+
+ leftArrow.addEventListener('click', function () {
+     if (currentIndex > 0) {
+         currentIndex--;
+         moveSlider(currentIndex);
+     }
+ });
+
+ window.addEventListener('resize', function () {
+     moveSlider(currentIndex); // Оновлюємо позицію слайдера при зміні розміру вікна
+ });
+});

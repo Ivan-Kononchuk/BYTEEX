@@ -711,9 +711,6 @@ body, html{
 	cursor: pointer;
 
 	margin-bottom: 11px;
-	/*display: block;*/
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
 }
 
 .button_arrow::after{
@@ -905,18 +902,6 @@ body, html{
   right: -55px;
   top: 97.5px;
   content: url(../imgs/slider/arrow_right.png);
-}
-
-.prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 10px;
-}
-
-.prev_comment:hover, .next_comment:hover {
-  /*background-color: #ddd;*/
 }
 
 /* COMMENTS SLIDER END */
@@ -1775,6 +1760,95 @@ body, html{
 
   	margin-bottom: 57px;
   }
+
+
+	/* SLIDER COMFORT START */
+  .comfort_slider_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 355.8px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comfort_cards_container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .button_arrow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider_arrow.mobile{
+  	display: inline-block;
+  }
+
+  .comfort_title{
+		margin-bottom: 23px;
+  }
+
+  .comfort_card1,
+  .comfort_card2,
+  .comfort_card3{
+  	width: 288px;
+  	height: 288px;
+
+  	margin-left: 34px;
+  }
+
+  .comfort_cards_container{
+  	gap: 0;
+  }
+
+  .prev_btn, .next_btn {
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+
+    width: 17.3px;
+    height: 24.6px;
+    padding: 5px;
+  }
+
+  .prev_btn{
+  	top: 131.5px;
+    left: 0px;
+    content: url(../imgs/slider/arrow_left.png);
+  }
+
+  .next_btn{
+  	top: 131.5px;
+    right: 0px;
+    content: url(../imgs/slider/arrow_right.png);
+  }
+
+  .fans_title{
+		font-size: 26px;
+		line-height: 40px;
+		letter-spacing: 0.04em;
+
+		margin-bottom: 19px;
+  }
+
+  .comfort_section{
+  	margin-bottom: 59px;
+  }
+
+  .comfort_width{
+  	margin-bottom: 0;
+  }
+
+  .fans_text{
+  	max-width: 385px;
+  }
+	/*	COMFORT SECTION END */
+
+	
 
 
 }
