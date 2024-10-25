@@ -49,7 +49,7 @@ function updateSlider(index) {
   
   // update class activity for pics
   thumbnails.forEach((thumb, i) => {
-    thumb.classList.toggle('active', i === index);
+    thumb.classList.toggle('active_image', i === index);
   });
 }
 
@@ -77,11 +77,11 @@ let commentIndex = 1;
 
 function updateTestimonials() {
   testimonials.forEach((slider_card, index) => {
-    slider_card.classList.remove('active');
+    slider_card.classList.remove('comment_active');
 
     // adjucement element
     if (index === commentIndex) {
-      slider_card.classList.add('active'); // middle comment
+      slider_card.classList.add('comment_active'); // middle comment
     }
   });
 
@@ -121,3 +121,37 @@ faqItems.forEach(item => {
     faq_icon.src = faq_icon.src.includes('close.png') ? 'imgs/faq/open.png' : 'imgs/faq/close.png';
   });
 });
+// FAQ ANIMATIONS END
+            // FAQ SECTION END
+
+
+          // ART BOARD SLIDER START MOBILE
+let currentSlide = 1;
+
+function showSlides(slideIndex) {
+  const slides = document.querySelector('.art_slider');
+  const dots = document.querySelectorAll('.dot');
+  
+  currentSlide = slideIndex;
+  
+  // Update the slide position
+  if (window.innerWidth <= 1264) {
+    slides.style.transform = `translateX(-${currentSlide * 32.2}%)`;
+  }
+  
+  
+  // Update dot active state
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('art_active', index === currentSlide);
+  });
+
+  window.addEventListener('resize', ()=>{
+      if (window.innerWidth >= 1264) {
+          slides.style.transform= 'translateX(0)';
+      }
+  });
+}
+
+// Initial load
+showSlides(1);
+              // ART BOARD SLIDER END MOBILE

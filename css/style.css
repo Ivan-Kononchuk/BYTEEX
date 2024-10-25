@@ -176,12 +176,50 @@ body, html{
 	padding: 9px 20px;
 	background-color: white;
 	z-index: 5;
+
+	margin-bottom: -76px;
 }
 
-.header_content_comment img:first-of-type{
+.header_content_author_pic{
 	width: 39px;
 	height: 39px;
 	margin-right: 14px;
+}
+
+.header_author_info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header_author_reviews{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.asterisks{
+	height: 9.7px;
+	width: 10px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	padding-right: 53px;
+	margin-bottom: 2px;
+	-ms-align-items: center;
+	align-items: center;
 }
 
 .header_content_author{
@@ -284,9 +322,9 @@ body, html{
 	background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
 	width: 100%;
 	position: relative;
-	top: -76px;
 
-	margin-bottom: 90px;
+	padding-top: 76px;
+	padding-bottom: 90px;
 }
 
 .loungewear_width{
@@ -295,7 +333,7 @@ body, html{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	top: 76px;
+	/*top: 76px;*/
 }
 
 /* ART BOARD STYLES START */
@@ -311,7 +349,7 @@ body, html{
 	margin-top: 0;
 }
 
-.art_board_pics_container{
+.art_board_pics_container .art_slider{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -418,7 +456,7 @@ body, html{
 
 
 /* SLIDER START */
-.slider {
+.story_slider{
   position: relative;
   width: 433px;
   height: 648px;
@@ -464,7 +502,7 @@ body, html{
   filter: brightness(135%);
 }
 
-.slider-thumbnails .active {
+.slider-thumbnails .active_image {
   border: 2px solid #FFFFFF;
   filter: brightness(100%);
 }
@@ -823,12 +861,12 @@ body, html{
 	display: flex;
 }
 
-.slider_card.active {
+.slider_card.comment_active {
 	height: 247px;
 	margin-bottom: 0;
 }
 
-.slider_card.active .comment_text{
+.slider_card.comment_active .comment_text{
 	-webkit-line-clamp: 6;
 	word-break: break-word;
 }
@@ -1255,6 +1293,10 @@ body, html{
 
 /* LOVE SECTION END */
 
+.mobile{
+	display: none;
+}
+
 @media screen and (max-width: 1507px) {
   .fans_pics img:nth-child(n+21) {
     display: none;
@@ -1398,11 +1440,342 @@ body, html{
 
 	.header_content_comment_text{
 		display: -webkit-box;
-	  -webkit-line-clamp: 1;
+	  -webkit-line-clamp: 2;
 	  -webkit-box-orient: vertical;
 	  overflow: hidden;
 	  padding: 16px 11px;
 	}
+
+	.header_author_info{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.header_content_comment_review_text{
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.header_content_comment_name{
+		order: 2;
+		margin: 0;
+		margin-right: auto;
+	}
+
+	.header_content_comment{
+		padding: 16px 11px;
+		width: 388px;
+	}
+
+	.header_content_comment_text{
+		padding: 0;
+		margin-top: 12px;
+	}
+
+	/* ART BOARD */
+	.dots {
+	  text-align: center;
+	  margin-top: 20px;
+	}
+
+	.dot {
+	  height: 10px;
+	  width: 10px;
+	  margin: 0 5px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	}
+
+	.dot.art_active {
+	  background-color: #717171;
+	}
+
+  .art_board_pics_container {
+    max-width: 394px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .art_slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 166.6%;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+  }
+
+  .art_board_pics_container img:nth-child(n+1){
+  	width: 126px;
+  	height: 15px;
+  }.art_board_pics_container img:nth-child(n+2){
+  	width: 73px;
+  	height: 35px;
+  }.art_board_pics_container img:nth-child(n+3){
+  	width: 145px;
+  	height: 29px;
+  }.art_board_pics_container img:nth-child(n+4){
+  	width: 101px;
+  	height: 19px;
+  }.art_board_pics_container img:nth-child(n+5){
+  	width: 100px;
+  	height: 30px;
+  }
+
+  .art_board_pics_container img:not(:last-child){
+  	margin-right: 28px;
+  }
+
+  .art_board_pics_container .art_slider{
+  	width: 100%;
+  }
+  /* ARTBOARD SLIDER END*/
+
+	/* STORY SECTION START MOBILE*/
+	.art_board{
+		margin-bottom: 42px;
+	}
+
+	.loungewear_content{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.loungewear_content_info{
+		order: 2;
+	}
+
+	.loungewear_content_title.mobile{
+		display: block;
+		font-size: 26px;
+		line-height: 34px;
+		letter-spacing: 0.04em;
+		width: 330px;
+		text-align: center;
+
+		margin-bottom: 25px;
+	}
+
+	.story_slider {
+    width: 303px;
+    height: 453px;
+    margin-bottom: 84px;
+  }
+
+  .slider-thumbnails img{
+  	width: 22px;
+  	height: 23px;
+	}
+
+	.slider-thumbnails{
+  	margin-bottom: 9px;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+	}
+
+	.prev-btn, .next-btn{
+		width: 17.3px;
+		height: 24.6px;
+		padding: 5px;
+	}
+
+	.prev-btn{
+		left: -26.35px;
+	}
+	.next-btn{
+		right: -26.35px;
+	}
+
+	.loungewear_content_title{
+		display: none;
+	}
+
+	.slider-thumbnails img:last-of-type {
+		margin-right: 0;
+	}
+
+	#image-caption{
+		margin: 0;
+		margin-top: 2px;
+	}
+
+	.loungewear_content_info_card{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.loungewear_content_info_card_title,
+	.loungewear_content_info_card_text{
+		text-align: center;
+		width: 244px;
+	}
+
+	.loungewear_content_info_card_title{
+		margin-bottom: 20px;
+	}
+
+	.loungewear_content_info_card_text{
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.03em;
+
+		height: 125px;
+		margin: 0;
+		border-bottom: 1px solid #C4C4C480;
+		padding-bottom: 6px;
+
+		margin-bottom: 31px;
+	}
+
+	.loungewear_content_info_card:nth-child(n+5) .loungewear_content_info_card_text{
+		border-bottom: none;
+		margin-bottom: 8px;
+	}
+
+	.button_arrow{
+		width: 369px;
+		height: 56px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 11px;
+	}
+	.button_arrow::after{
+		margin-left: 16px;
+		bottom: 1px;
+	}
+
+	.loungewear_content_info_card img {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.loungewear_content_info_card:nth-child(n+2) img{
+		content: url(../imgs/loungewear_content_info_first_pic_mobile.png);
+	}
+
+	.loungewear_content_info_card:nth-child(n+3) img{
+		content: url(../imgs/loungewear_content_info_third_pic.png);
+	}
+
+	.loungewear_content_info_card:nth-child(n+4) img{
+		content: url(../imgs/loungewear_content_info_second_pic.png);
+	}
+
+	.loungewear_content_info_card:nth-child(n+5) img{
+		content: url(../imgs/loungewear_content_info_fourth_pic.png);
+	}
+
+	.reviews_container{
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.reviews_container img{
+		width: 13.6px;
+		height: 13px;
+	}
+
+	.comfort_reviews_text{
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.02em;
+	}
+
+	.button_arrow.mobile, .reviews_container.mobile{
+		display: flex;
+	}
+
+	.loungewear_section{
+		background: linear-gradient(180deg, 
+		    rgba(250, 242, 230, .8),  
+		    white 10%, 
+		    white 94%, 
+		    rgba(250, 242, 230, .8) 100%);
+	}
+
+	.story_section{
+		padding-top: 39px;
+	}
+
+	.story_title.mobile{
+		display: block;
+		font-size: 26px;
+  	line-height: 40px;
+  	letter-spacing: 0.04em;
+
+  	margin-top: 0;
+  	margin-bottom: 26px;
+	}
+
+	.story_content {
+    grid-template-columns: auto;
+    gap: 0; 
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .story_first_pic{
+  	width: 102px;
+  	height: 108px;
+  }
+
+  .story_first_second{
+  	width: 238px;
+  	height: 310px;
+  	top: 25px;
+  }
+
+  .story_third_second{
+  	width: 110px;
+  	height: 112px;
+  }
+
+  .story_pics{
+  	width: 345px;
+  	height: 363px;
+
+  	margin-bottom: 47px;
+  }
+
+  .story_title{
+  	display: none;
+  }
+
+  .story_info{
+  	max-width: 335px;
+  }
+
+  .story_section{
+  	padding-bottom: 36px;
+
+  	margin-bottom: 57px;
+  }
+
 
 }
 

@@ -73,16 +73,21 @@
 						
 						<div class="header_content_comment">
 							<div class="header_content_author">
-								<img src="imgs/header_content_comment_img.png" alt="header_content_comment_img.png">
-								<p class="header_content_comment_name">Amy P.</p>
+								<img class="header_content_author_pic" src="imgs/header_content_comment_img.png" alt="header_content_comment_img.png">
 						
-								<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
-								<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
-								<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
-								<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
-								<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
-						
-								<p class="header_content_comment_review_text">One of 500+ 5 Star Reviews Online</p>
+								<div class="header_author_info">
+									<p class="header_content_comment_name">Amy P.</p>
+									<div class="header_author_reviews">
+										<div class="asterisks">
+											<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+											<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+											<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+											<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+											<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+										</div>
+										<p class="header_content_comment_review_text">One of 500+ 5 Star Reviews Online</p>
+									</div>
+								</div>
 							</div>
 						
 							<p class="header_content_comment_text">Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. Quality product on every level. From the compostable packaging, to the supplied washing bag, even the garments smells like fresh herbs when I first held them.</p>
@@ -116,20 +121,30 @@
 		<section class="loungewear_section">
 			<div class="loungewear_width">
 
-
 				<div class="art_board">
-					<h4 class="art_board_title">as seen in</h4>
-					<div class="art_board_pics_container">
-						<img src="imgs/art_board_img1.png" alt="art_board_img1.png">
-						<img src="imgs/art_board_img2.png" alt="art_board_img2.png">
-						<img src="imgs/art_board_img3.png" alt="art_board_img3.png">
-						<img src="imgs/art_board_img4.png" alt="art_board_img4.png">
-						<img src="imgs/art_board_img5.png" alt="art_board_img5.png">
-					</div>
+				  <h4 class="art_board_title">as seen in</h4>
+				  <div class="art_board_pics_container">
+				    <div class="art_slider">
+				      <img src="imgs/art_board_img1.png" alt="art_board_img1.png">
+				      <img src="imgs/art_board_img2.png" alt="art_board_img2.png">
+				      <img src="imgs/art_board_img3.png" alt="art_board_img3.png">
+				      <img src="imgs/art_board_img4.png" alt="art_board_img4.png">
+				      <img src="imgs/art_board_img5.png" alt="art_board_img5.png">
+				    </div>
+				  </div>
+				  <div class="dots">
+				    <span class="dot" onclick="showSlides(0)"></span>
+				    <span class="dot" onclick="showSlides(1)"></span>
+				    <span class="dot" onclick="showSlides(2)"></span>
+				  </div>
 				</div>
 
 
+
+
+
 				<div class="loungewear_content">
+					<h2 class="loungewear_content_title mobile">Loungewear you can be proud of.</h2>
 					<div class="loungewear_content_info">
 						<h2 class="loungewear_content_title">Loungewear you can be proud of.</h2>
 
@@ -166,11 +181,22 @@
 							</div>
 						</div>
 
+						<button class="button_arrow mobile">Customize Your Outfit</button>
+
+						<div class="reviews_container mobile">
+							<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+							<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+							<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+							<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+							<img src="imgs/header_content_comment_asterisk.svg" alt="asterisk.svg">
+							<p class="comfort_reviews_text">One of 500+ 5 Star Reviews Online</p>
+						</div>
+
 
 					</div>
 
 					<!-- SLIDER PICS -->
-					<div class="slider">
+					<div class="story_slider">
 					  <div class="slider-main">
 
 					    <span class="prev-btn"></span>
@@ -186,7 +212,6 @@
 					      <img class="thumbnail" src="imgs/slider/6.jpg" alt="White Robe" onclick="changeImage(5)">
 					      <img class="thumbnail" src="imgs/slider/7.jpg" alt="White Robe" onclick="changeImage(6)">
 					      <img class="thumbnail" src="imgs/slider/8.jpg" alt="White Robe" onclick="changeImage(7)">
-					      <!-- Додати інші мініатюри -->
 					    </div>
 
 					  <p id="image-caption">White Robe</p>
@@ -208,6 +233,8 @@
 				
 
 				<div class="story_content">
+
+					<h2 class="story_title mobile">Be your best self.</h2>
 
 					<div class="story_pics">
 						<img class="story_first_pic" src="imgs/story_pics/1.png" alt="1.jpg">
@@ -231,7 +258,7 @@
 
 						<p class="story_text">Cras mattis varius mollis.</p>
 
-						<button class="story_button">Customize Your Outfit</button>
+						<button class="story_button mobile">Customize Your Outfit</button>
 					</div>
 				</div>
 
