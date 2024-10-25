@@ -73,7 +73,7 @@ function changeImage(index) {
 const prevComment = document.querySelector('.prev_comment');
 const nextComment = document.querySelector('.next_comment');
 const testimonials = document.querySelectorAll('.slider_card');
-let commentIndex = 1;
+let commentIndex = 0;
 
 function updateTestimonials() {
   testimonials.forEach((slider_card, index) => {
@@ -86,7 +86,10 @@ function updateTestimonials() {
   });
 
   // Moving slides for right view
-  const offset = (commentIndex - 1) * -30.2;
+  var offset = (commentIndex - 1) * -30.2;
+  if (window.innerWidth <= 1264) {
+    offset = (commentIndex - 1) * -35.1;
+  }
   document.querySelector('.slider_container').style.transform = `translateX(${offset}%)`;
 }
 

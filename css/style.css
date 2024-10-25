@@ -1848,8 +1848,178 @@ body, html{
   }
 	/*	COMFORT SECTION END */
 
-	
+	/* COMMENT SLIDE START*/
+	.slider_wrapper{
+		position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 352.6px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+	}
 
+	.prev_comment, .next_comment {
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+
+    width: 17.3px;
+    height: 24.6px;
+    padding: 5px;
+  }
+
+  .prev_comment{
+  	top: 131.5px;
+    left: -27px;
+    content: url(../imgs/slider/arrow_left.png);
+  }
+
+  .next_comment{
+  	top: 131.5px;
+    right: -27px;
+    content: url(../imgs/slider/arrow_right.png);
+  }
+
+  .slider_container {
+    gap: 40px;
+  }
+
+  .slider_card {
+    width: 299px;
+    height: 261px;
+  }
+
+  .comment_slider{
+  	max-width: 352.6px;
+  	margin-bottom: 57px;
+  }
+
+  .slider_author_pic{
+  	width: 35px;
+  	height: 35px;
+  	margin-right: 11.5px
+  }
+
+  .slider_author_info div img{
+  	width: 9px;
+  	height: 9px;
+  }
+
+  .slider_card{
+  	margin-left: 0px;
+  	margin-bottom: 0;
+  }
+
+  .comment_active{
+  	height: auto;
+  }
+
+  /* COMMENT SLIDE END */
+
+  /* FAQ START */
+	.faq_title{
+		font-size: 26px;
+		line-height: 30px;
+		letter-spacing: 0.04em;
+	}
+
+	.faq_content{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.faq_title{
+		text-align: center;
+		text-transform: lowercase;
+		max-width: 318px;
+		margin-left: auto;
+		margin-right: auto;
+
+		margin-bottom: 8px;
+	}
+	
+	.faq_questions{
+		max-width: 349px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 39px;
+	}
+
+	.faq_width .reviews_container{
+		margin-bottom: 68px;
+	}
+
+	.faq_answer{
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+	}
+
+	.faq_question_container{
+		margin-bottom: 29.5px;
+	}
+
+	.faq_section{
+		padding-bottom: 52px;
+		margin-bottom: -19px;
+	}
+
+	.faq_width .reviews_container{
+		margin-bottom: 0;
+	}
+
+	/* FAQ SECTION END*/
+
+	/* SECTION IMPACT START*/
+	.section_impact{
+		height: auto;
+	}
+
+	.impact_content{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.impact_info_container:not(:first-of-type){
+    border-left: 0;
+    padding-left: 0px;
+  }
+
+  .impact_info_container:not(:last-of-type){
+  	margin-right: 0;
+  	border-bottom: 1px solid #C4C4C480;
+  	padding-bottom: 16px;
+  	margin-bottom: 23px;
+  }
+
+
+  .impact_title{
+  	padding-top: 52px;
+  	margin-bottom: 38px;
+
+  	text-transform: capitalize;
+  }
+
+  .impact_titles img{
+  	width: 171px;
+  	height: 25px;
+  }
+
+  .section_impact{
+  	padding-bottom: 56px;
+  }
+
+  .section_impact{
+  	margin-bottom: 52px;
+  }
 
 }
 
