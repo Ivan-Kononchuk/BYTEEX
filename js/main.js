@@ -90,6 +90,10 @@ function updateTestimonials() {
   if (window.innerWidth <= 1264) {
     offset = (commentIndex - 1) * -35.1;
   }
+
+  if (window.innerWidth <= 428) {
+    offset = (commentIndex - 1) * -33.3;
+  }
   document.querySelector('.slider_container').style.transform = `translateX(${offset}%)`;
 }
 
@@ -140,6 +144,10 @@ function showSlides(slideIndex) {
   // Update the slide position
   if (window.innerWidth <= 1264) {
     slides.style.transform = `translateX(-${currentSlide * 32.2}%)`;
+  }
+
+  if (window.innerWidth <= 428) {
+    slides.style.transform = `translateX(-${currentSlide * 47.2}%)`;
   }
   
   

@@ -2222,7 +2222,7 @@ body, html{
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 428px) {
   .prev_comment{
   	left: -5px;
   }
@@ -2230,4 +2230,113 @@ body, html{
   .next_comment{
   	right: 0px;
   }
+}
+
+
+@media screen and (max-width: 428px) {
+	.header_content_side_first_pic, .header_content_side_second_pic{
+		display: none;
+	}
+
+	.header_pic_one{
+		left: 0;
+	}
+
+	.header_pic_second{
+		left: 83px;
+	}
+
+	.header_pic_third{
+		right: 0;
+	}
+
+	.header_pics{
+		width: 310px;
+	}
+
+	.header_content_mobile_priority,
+	.header_content_button,
+	.header_content_comment,
+	.button_arrow {
+		max-width: 340px;
+	}
+
+	.art_slider,
+	.art_board_pics_container,
+	.story_slider,
+	.comfort_slider_wrapper,
+	.comment_slider{
+		scale: 0.8;
+	}
+
+	.loungewear_content_title.mobile{
+		margin-bottom: 0;
+	}
+
+	.story_slider{
+		margin-bottom: 30px
+	}
+
+	.loungewear_section{
+    padding-bottom: 30px;
+  }
+
+  .story_first_third{
+  	right: 4px;
+  }
+
+  .comfort_section{
+  	margin-bottom: 30px;
+  }
+
+  .fans_text{
+  	max-width: 340px;
+
+  	margin-bottom: 30px;
+  }
+
+  .fans_pics{
+  	margin-bottom: 30px;
+  }
+
+  .slider_container{
+  	gap: 0;
+  }
+
+  .slider_card{
+  	margin-left: -5px;
+  }
+
+  .prev_comment{
+  	left: 10px;
+  }
+
+  .slider_container{
+  	left: -10px;
+  }
+
+  .comment_slider{
+  	margin-bottom: 30px;
+  }
+
+  .love_rectangle{
+  	display: none;
+  }
+
+  .love_first_girl{
+  	left: 0;
+  }
+
+  .love_second_girl{
+  	left: 78.6px;
+  }
+
+  .love_third_girl{
+  	left: 218px;
+  }
+
+  .love_pics_container {
+	  max-width: 340px;
+	}
+
 }
